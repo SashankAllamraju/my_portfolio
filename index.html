@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="assets/css/chartsAndMaps.css" />
+		<!-- Chart.js -->
+		<script src="assets/js/chart.js"></script>
+		<!-- for map -->
+		<script src="assets/js/helper.js"></script>
+		<!--Google Maps-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/sashank.png" alt="" /></a>
+					<h1><strong>Sashank Allamraju</strong></h1>
+					<h1>Web Developer | Designer</h1>
+					<p>I am a self-taught SQL & Front-End Web Developer. I'm passionate about UX/UI design and web development.</p>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+				<!--  chartjs library from: http://www.chartjs.org/docs/#polar-area-chart -->
+					<section id="one">
+						<h2>Skills</h2>
+						<div class="row">
+							<div class="12u 12u$(xsmall)">
+								<!--List of Skills-->
+								<div id ="skills-list"></div>
+								<!--Skills Chart-->
+								<div id="skills-chart-holder" class="text-center skills-chart-holder">
+									<canvas id="skills-chart" width="320" height="320"></canvas>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="two">
+						<h2>My Portfolio</h2>
+						<div class="row">
+
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/fulls/toDo.jpg" class="image fit thumb">
+									<img src="images/thumbs/toDo.jpg" alt=""/>
+								</a>
+								<h3>To-Do List App</h3>
+								<p>Built a single-page To-Do List application for personal use.</p>
+							</article>
+
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/fulls/nh-map-knockoutjs.jpg" class="image fit thumb">
+									<img src="images/thumbs/nh-map-knockoutjs.jpg" alt=""/>
+								</a>
+								<h3>Neighborhood Map</h3>
+								<p>Built a single-page, responsive web application using Knockout JS framework & Google Maps API.</p>
+							</article>
+
+							<article class="6u 12u$(xsmall) work-item">
+								<a href="images/fulls/arcadeGame.jpg" class="image fit thumb">
+									<img src="images/thumbs/arcadeGame.jpg" alt="" />
+								</a>
+								<h3>Classic Arcade Game Clone</h3>
+								<p>Created and rendered Game Objects with Javascript Object-Oriented concepts on HTML canvas.</p>
+							</article>
+
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/fulls/website-optimisation.jpg" class="image fit thumb">
+									<img src="images/thumbs/website-optimisation.jpg" alt=""/>
+								</a>
+								<h3>Website Optimization</h3>
+								<p>Optimized critical rendering path the existing website with PageSpeed Insights score of 90+.</p>
+							</article>
+
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/fulls/Portfolio.jpg" class="image fit thumb">
+									<img src="images/thumbs/Portfolio.jpg" alt="" />
+								</a>
+								<h3>A portfolio site</h3>
+								<p>Built using HTML, CSS, flexbox layout mode</p>
+							</article>
+
+							<article class="6u$ 12u$(xsmall) work-item">
+								<a href="images/fulls/jasminejs.jpg" class="image fit thumb">
+									<img src="images/thumbs/jasminejs.jpg" alt="" />
+								</a>
+								<h3>Feed Reader Testing</h3>
+								<p>Wrote test cases for unit testing of a web application using Jasmine.js framework.</p>
+							</article>
+
+						</div>
+
+					</section>
+				<!-- Two point 1 -->
+				<section id="three">
+					<h2>Where I've Lived and Worked</h2>
+					<div class="row">
+						<div class="12u 12u$(small)">
+							<div id="mapDiv"></div>
+						</div>
+					</div>
+				</section>
+
+
+				<!-- Three -->
+					<section id="four">
+						<h2>Get In Touch</h2>
+						<p>Interested in hiring me for some creative and development work? Drop in a message and I will respond soon.</p>
+						<div class="row">
+							<div class="8u 12u$(small)">
+								<form method="POST" action="https://formspree.io/allamraju.sashank@gmail.com">
+									<div class="row uniform 50%">
+										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="6u$ 12u$(xsmall)"><input type="email" name="_replyto" id="email" placeholder="Email" /></div>
+										<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message"></li>
+									</ul>
+								</form>
+							</div>
+							<div class="4u$ 12u$(small)">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon fa-home"><span class="label">Address</span></h3>
+										CBD Belapur<br />
+										Navi Mumbai, MH 400614<br />
+										India
+									</li>
+									<li>
+										<h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+										+91-8220257321
+									</li>
+									<li>
+										<h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+										<a href="#">allamraju.sashank@gmail.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://in.linkedin.com/in/sashankallamraju" target="_blank" class="icon fa-linkedin-square fa-lg"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/SashankAllamraju"  target="_blank" class="icon fa-github fa-lg"><span class="label">Github</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Sashank Allamraju</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+
+		<script>
+			if (document.getElementById('map') === null) {
+      	document.getElementById('mapDiv').style.display = 'none';
+    	}
+		</script>
+
+	</body>
+</html>

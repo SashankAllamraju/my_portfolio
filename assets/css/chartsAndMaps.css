@@ -1,0 +1,54 @@
+/* Skills */
+.skills-chart-holder{
+  width:100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#skills-list{
+  width: 100%;
+  margin: 20px 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
+#skills-list .label{
+  margin: 3px;
+  padding: 3px;
+  color: white;
+}
+#skills-list .red{
+  background-color: #FF5A5E;
+}
+#skills-list .orange{
+  background-color: #f06613;
+}
+#skills-list .green{
+  background-color: #46BFBD;
+}
+#skills-list .darker-green{
+  background-color: #23582b;
+}
+#skills-list .yellow{
+  background-color: #FDB45C;
+}
+#skills-list .grey{
+  background-color: #A8B3C5;
+}
+#skills-list .darker-grey{
+  background-color: #616774;
+}
+
+
+/* location */
+#map {
+  display: block;
+  height: 100%;
+}
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
