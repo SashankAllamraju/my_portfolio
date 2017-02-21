@@ -244,7 +244,7 @@ var skillsChartLabels = function(){
 				}
 
 		// Main Sections: Two.
-
+/*
 			// Lightbox gallery.
 				$window.on('load', function() {
 
@@ -263,7 +263,7 @@ var skillsChartLabels = function(){
 					});
 
 				});
-
+*/
 
 
 	});

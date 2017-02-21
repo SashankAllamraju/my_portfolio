@@ -8,12 +8,17 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<link rel="stylesheet" href="assets/css/chartsAndMaps.css" />
+
+		<script src="assets/js/jquery.min.js"></script>
+		<!-- jQuerymodal -->
+		<link rel="stylesheet" href="assets/css/jquery.modal.css" type="text/css" media="screen" />
+		<script src="assets/js/jquery.modal.js" type="text/javascript" charset="utf-8"></script>
 		<!-- Chart.js -->
 		<script src="assets/js/chart.js"></script>
 		<!-- for map -->
 		<script src="assets/js/helper.js"></script>
 		<!--Google Maps-->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAa-coANjS2DlCeHXAjceDJ2vTYvNGLWEY"></script>
 	</head>
 	<body id="top">
 
@@ -50,54 +55,89 @@
 					<section id="two">
 						<h2>My Portfolio</h2>
 						<div class="row">
-
+							<!-- project 1 -->
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/toDo.jpg" class="image fit thumb">
-									<img src="images/thumbs/toDo.jpg" alt=""/>
-								</a>
-								<h3>To-Do List App</h3>
-								<p>Built a single-page To-Do List application for personal use.</p>
-							</article>
-
-							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/nh-map-knockoutjs.jpg" class="image fit thumb">
-									<img src="images/thumbs/nh-map-knockoutjs.jpg" alt=""/>
-								</a>
+								<!-- Link to open the modal -->
+								<a href="#article1" rel="modal:open" class="image fit thumb"><img src="images/thumbs/nh-map-knockoutjs.jpg" alt=""/></a>
 								<h3>Neighborhood Map</h3>
 								<p>Built a single-page, responsive web application using Knockout JS framework & Google Maps API.</p>
 							</article>
+							<!-- Modal HTML embedded directly into document -->
+							<div id="article1" style="display:none;" class="modal">
+								<h3>Neighborhood Map</h3>
+								<img src="images/fulls/nh-map-knockoutjs.jpg" alt=""/>
+								<p>Built a single-page, responsive web application using Knockout JS framework & Google Maps API.</p>
+							</div>
 
+							<!-- project 2 -->
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/arcadeGame.jpg" class="image fit thumb">
-									<img src="images/thumbs/arcadeGame.jpg" alt="" />
-								</a>
+								<!-- Link to open the modal -->
+								<a href="#article2" rel="modal:open" class="image fit thumb"><img src="images/thumbs/toDo.jpg" alt=""/></a>
+								<h3>To-Do List App</h3>
+								<p>This is a personal project. Built a single-page To-Do List application for personal use.</p>
+							</article>
+							<!-- Modal HTML embedded directly into document -->
+							<div id="article2" style="display:none;" class="modal">
+								<h3>To-Do List App</h3>
+								<img src="images/fulls/toDo.jpg" alt=""/>
+								<p>This is a personal project. Built a single-page To-Do List application for personal use.</p>
+							</div>
+
+							<!-- project 3 -->
+							<article class="6u 12u$(xsmall) work-item">
+								<!-- Link to open the modal -->
+								<a href="#article3" rel="modal:open" class="image fit thumb"><img src="images/thumbs/arcadeGame.jpg" alt=""/></a>
 								<h3>Classic Arcade Game Clone</h3>
 								<p>Created and rendered Game Objects with Javascript Object-Oriented concepts on HTML canvas.</p>
 							</article>
+							<!-- Modal HTML embedded directly into document -->
+							<div id="article3" style="display:none;" class="modal">
+								<h3>Classic Arcade Game Clone</h3>
+								<img src="images/fulls/arcadeGame.jpg" alt=""/>
+								<p>Created and rendered Game Objects with Javascript Object-Oriented concepts on HTML canvas.</p>
+							</div>
 
+							<!-- project 4 -->
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/website-optimisation.jpg" class="image fit thumb">
-									<img src="images/thumbs/website-optimisation.jpg" alt=""/>
-								</a>
+								<!-- Link to open the modal -->
+								<a href="#article4" rel="modal:open" class="image fit thumb"><img src="images/thumbs/website-optimisation.jpg" alt=""/></a>
 								<h3>Website Optimization</h3>
 								<p>Optimized critical rendering path the existing website with PageSpeed Insights score of 90+.</p>
 							</article>
+							<!-- Modal HTML embedded directly into document -->
+							<div id="article4" style="display:none;" class="modal">
+								<h3>Website Optimization</h3>
+								<img src="images/fulls/website-optimisation.jpg" alt=""/>
+								<p>Optimized critical rendering path the existing website with PageSpeed Insights score of 90+.</p>
+							</div>
 
+							<!-- project 5 -->
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/Portfolio.jpg" class="image fit thumb">
-									<img src="images/thumbs/Portfolio.jpg" alt="" />
-								</a>
+								<!-- Link to open the modal -->
+								<a href="#article5" rel="modal:open" class="image fit thumb"><img src="images/thumbs/Portfolio.jpg" alt=""/></a>
 								<h3>A portfolio site</h3>
-								<p>Built using HTML, CSS, flexbox layout mode</p>
+								<p>Built a responsive portfolio webpage layout using HTML, CSS, flexbox layout mode.</p>
 							</article>
+							<!-- Modal HTML embedded directly into document -->
+							<div id="article5" style="display:none;" class="modal">
+								<h3>A portfolio site</h3>
+								<img src="images/fulls/Portfolio.jpg" alt=""/>
+								<p>Built a responsive portfolio webpage layout using HTML, CSS, flexbox layout mode.</p>
+							</div>
 
+							<!-- project 6 -->
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/jasminejs.jpg" class="image fit thumb">
-									<img src="images/thumbs/jasminejs.jpg" alt="" />
-								</a>
+								<!-- Link to open the modal -->
+								<a href="#article6" rel="modal:open" class="image fit thumb"><img src="images/thumbs/jasminejs.jpg" alt=""/></a>
 								<h3>Feed Reader Testing</h3>
 								<p>Wrote test cases for unit testing of a web application using Jasmine.js framework.</p>
 							</article>
+							<!-- Modal HTML embedded directly into document -->
+							<div id="article6" style="display:none;" class="modal">
+								<h3>Website Optimization</h3>
+								<img src="images/fulls/jasminejs.jpg" alt=""/>
+								<p>Optimized critical rendering path the existing website with PageSpeed Insights score of 90+.</p>
+							</div>
 
 						</div>
 
@@ -165,9 +205,9 @@
 				</div>
 			</footer>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<!-- Scripts
+
+		<script src="assets/js/jquery.poptrox.min.js"></script>-->
 		<script src="assets/js/skel.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
